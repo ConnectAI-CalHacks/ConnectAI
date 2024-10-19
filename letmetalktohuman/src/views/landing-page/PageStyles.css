@@ -15,12 +15,13 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background: rgb(25, 25, 25);
+    background: url('./assets/istockphoto-1490263997-640_adpp_is.mp4_1729363612392-ezgif.com-video-to-gif-converter.gif') no-repeat center center; /* Set background image */
+    background-size: cover; /* Make sure the background covers the entire container */
 }
 
 /* Landing Page Title */
 .landing-title {
-    font-size: 3rem;
+    font-size: 12rem;
     color: #fff;
     margin-bottom: 20px;
     animation: fadeIn 1.5s ease-in-out forwards; /* Fade-in animation */
@@ -28,7 +29,7 @@ body {
 
 /* Landing Page Subtitle */
 .landing-subtitle {
-    font-size: 1.25rem;
+    font-size: 5rem;
     color: #ffffffcc;
     margin-bottom: 40px;
     max-width: 600px;
@@ -47,6 +48,7 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     animation: fadeIn 1.5s ease-in-out 1s forwards; /* Fade-in animation with delay */
+    margin-top: 50px;
 }
 
 .floating-button:hover {
@@ -84,11 +86,12 @@ body {
 .navbar ul li a:hover {
     text-decoration: underline;
 }
+
 .main_title {
     color: #fff;
-}
-.main_title {
-    color: #fff;
+    font-size: xx-large;
+    margin-bottom: 120px;
+    ;
 }
 
 /* Particle background customization */

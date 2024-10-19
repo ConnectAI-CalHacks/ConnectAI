@@ -3,13 +3,17 @@ import './PageStyles.css';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import { ReactTyped as Typed } from 'react-typed';
-import ProfilePic from './assets/download.png';
+import ProfilePic from './assets/output-onlinegiftools-ezgif.com-resize.gif';
+
 
 const stringsToRender = [
-  'Talk to a real service agent',
-  'Get past automated customer service',
-  'Save time',
+  'Talk to a real service agent.',
+  'Get past automated customer service.',
+  'Save time.',
+  '<strong>Talk to a Human.<!/strong>',
   ''
+
+  
 ];
 
 const LandingPage = () => {
@@ -70,20 +74,23 @@ const LandingPage = () => {
       />
 
       <header className="landing-content">
-        <img src={ProfilePic} className="profile-pic" alt="profile" />
-        <h1 className="main_title">Hello, let me help you</h1>
+       
+        <h1 className="main_title">Automated customer service got you feeling robotic? <br></br> Let’s dial up a real person!</h1>
         <Typed className='main_title'
           strings={stringsToRender}
-          typeSpeed={60}
-          backSpeed={50}
+          typeSpeed={80}
+          backSpeed={30}
+          showCursor={true}
+          onTypingDone = {30}
           loop
         />
 
         {/* Floating button */}
-        <button className="floating-button" onClick={handleClick}>
+        
+      </header>
+      <button className="floating-button " onClick={handleClick}>
           Learn More
         </button>
-      </header>
     </div>
   );
 };
