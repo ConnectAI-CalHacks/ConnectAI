@@ -1,0 +1,19 @@
+/* src/components/ErrorAlert.css */
+.error-alert {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }

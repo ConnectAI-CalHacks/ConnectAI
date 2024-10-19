@@ -1,8 +1,14 @@
+<<<<<<< HEAD
+=======
+
+
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
+>>>>>>> a03bd50 (adding error message for name)
 import React from "react";
-import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Application from "./views/application/Application";
 
