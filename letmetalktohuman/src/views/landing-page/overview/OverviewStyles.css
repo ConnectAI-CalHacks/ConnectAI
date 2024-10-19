@@ -1,0 +1,26 @@
+.overview {
+    background-color: #333; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 100px 180px;
+  }
+  
+  .overview-title {
+    font-size: 24px;
+    color: #fff; /* Darker text color for the title */
+    margin-bottom: 10px;
+  }
+  
+  .overview-text {
+    font-size: 16px;
+    color: #fff; /* Slightly lighter text color for readability */
+    line-height: 1.5; /* Improved readability */
+  }
+  
+  .title{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
