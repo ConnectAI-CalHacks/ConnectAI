@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './AppStyles.css';
 import NavBar from '../navbar/NavBar';
 import ErrorAlert from './ErrorAlert';
-
+import PhoneInput from 'react-phone-input-2'; // Importing PhoneInput
+import 'react-phone-input-2/lib/style.css'; // Import styles for PhoneInput
 export default function Component() {
   const [formData, setFormData] = useState({
     myName: '',
@@ -26,6 +27,9 @@ export default function Component() {
     }
   };
 
+  const handlePhoneChange = (value, name) => {
+    setFormData({ ...formData, [name]: value }); // Update phone number with the selected value
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -68,14 +72,11 @@ export default function Component() {
           </div>
           <div className="form-group">
             <label htmlFor="myPhoneNum" className="form-label">My Phone Number:</label>
-            <input
-              type="text"
-              id="myPhoneNum"
-              name="myPhoneNum"
-              className="form-input"
+            <PhoneInput
+              country={'us'} // Default country can be changed
               value={formData.myPhoneNum}
-              onChange={handleChange}
-              placeholder='1234567890'
+              onChange={(value) => handlePhoneChange(value, 'myPhoneNum')}
+              className="form-input"
             />
           </div>
           <div className="form-group">
@@ -91,15 +92,12 @@ export default function Component() {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="callerPhoneNum" className="form-label">Caller Phone Number:</label>
-            <input
-              type="text"
-              id="callerPhoneNum"
-              name="callerPhoneNum"
-              className="form-input"
+             <label htmlFor="callerPhoneNum" className="form-label">Caller Phone Number:</label>
+            <PhoneInput
+              country={'us'} // Default country can be changed
               value={formData.callerPhoneNum}
-              onChange={handleChange}
-              placeholder='1234567890'
+              onChange={(value) => handlePhoneChange(value, 'callerPhoneNum')}
+              className="form-input"
             />
           </div>
           <div className="form-group">

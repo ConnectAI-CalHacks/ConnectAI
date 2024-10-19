@@ -147,4 +147,63 @@ body {
     font-size: 14px;
     padding: 8px;
   }
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  /* Specific styles for PhoneInput to add space */
+  .form-group .react-tel-input {
+    margin-bottom: 10px; /* Adjust space below PhoneInput */
+  }
+}
+
+/* Language button styles */
+.language-button {
+  width: 100%; /* Make button take full width of the container */
+  padding: 10px; /* Same padding as input fields */
+  font-size: 16px; /* Match font size with input fields */
+  border: 2px solid #94ffd2; /* Same border style */
+  border-radius: 10px; /* Match border radius */
+  background-color: transparent; /* Keep background transparent */
+  color: #fff; /* White text */
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Add focus effect similar to input fields */
+.language-button:focus {
+  border-color: #fff; /* White focus border */
+  box-shadow: 0 0 8px rgba(93, 254, 202, 0.8); /* Glowing effect */
+}
+
+/* Button hover effect */
+.language-button:hover {
+  border-color: #4be1ae; /* Slightly darker border on hover */
+}
+
+/* Custom styles for PhoneInput */
+.react-tel-input {
+  background-color: white !important; /* Set background to white */
+  height: 40px; /* Adjust height as needed */
+}
+
+.react-tel-input .form-input {
+  background-color: white; /* Ensure input inside PhoneInput is white */
+  border: 2px solid #94ffd2; /* Set your preferred border color */
+  border-radius: 10px; /* Adjust border radius to match your design */
+  padding: 10px; /* Add some padding for better spacing */
+}
+
+/* Optional: Style the dropdown menu for country selection */
+.react-tel-input .selected-flag {
+  background-color: white; /* Set flag background to white */
+}
+
+/* Each form group */
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+  display: 
 }
