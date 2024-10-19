@@ -6,10 +6,10 @@ import { ReactTyped as Typed } from 'react-typed';
 import ProfilePic from './assets/download.png';
 
 const stringsToRender = [
-  'Suman Kumar',
-  'a full-stack developer',
-  'a content creator on YouTube',
-  'a cricket fan'
+  'Talk to a real service agent',
+  'Get past automated customer service',
+  'Save time',
+  ''
 ];
 
 const LandingPage = () => {
@@ -71,8 +71,8 @@ const LandingPage = () => {
 
       <header className="landing-content">
         <img src={ProfilePic} className="profile-pic" alt="profile" />
-        <h1 className="main_title">Hello, I am</h1>
-        <Typed
+        <h1 className="main_title">Hello, let me help you</h1>
+        <Typed className='main_title'
           strings={stringsToRender}
           typeSpeed={60}
           backSpeed={50}
