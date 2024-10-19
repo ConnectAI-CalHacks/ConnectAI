@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './AppStyles.css';
+import NavBar from '../navbar/NavBar';
+
 
 export default function Component() {
   const [formData, setFormData] = useState({
@@ -90,3 +92,4 @@ export default function Component() {
     </div>
   );
 }
+
