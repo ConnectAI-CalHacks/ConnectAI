@@ -1,11 +1,15 @@
 import React from 'react';  
 import './AppStyles.css';
+import NavBar from '../navbar/NavBar';
 
-export default function Component() {
+const Application = () => {
     return (
-      <div>
-        <h1>Welcome to the application page!</h1>
-      </div>
+        <div>
+            <NavBar />
+            <h1>Application Page</h1>
+        </div>
     );
-  }
+};
+
+export default Application;
   
