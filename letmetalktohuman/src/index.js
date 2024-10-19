@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-=======
-
 
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
->>>>>>> a03bd50 (adding error message for name)
 import React from "react";
 import "./index.css";
 import App from "./App";
