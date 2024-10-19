@@ -23,6 +23,7 @@ export default function Component() {
   };
 
   return (
+    <><NavBar/>
     <div className='container'>
         <div className="form-container">
       <h1 className="form-title">Lemme talk to a HUMAN!</h1>
@@ -90,6 +91,7 @@ export default function Component() {
       </form>
     </div>
     </div>
+    </>
   );
 }
 
