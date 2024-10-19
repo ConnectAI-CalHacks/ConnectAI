@@ -73,54 +73,88 @@ export default function IVRAgentComponent() {
   };
 
   return (
+<<<<<<< HEAD
     <div>
       <h1>Welcome to the IVR Assistant Page!</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>My Name:</label>
+=======
+    <div className='container'>
+        <div className="form-container">
+      <h1 className="form-title">Lemme talk to a HUMAN!</h1>
+      <form className="form-content" onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="myName" className="form-label">My Name:</label>
+>>>>>>> 6c65b05cdc8e13f6ba81cd38c0a945787041b573
           <input
             type="text"
+            id="myName"
             name="myName"
+            className="form-input"
             value={formData.myName}
             onChange={handleChange}
+            placeholder='John Doe'
           />
         </div>
-        <div>
-          <label>My Phone Number:</label>
+        <div className="form-group">
+          <label htmlFor="myPhoneNum" className="form-label">My Phone Number:</label>
           <input
             type="text"
+            id="myPhoneNum"
             name="myPhoneNum"
+            className="form-input"
             value={formData.myPhoneNum}
             onChange={handleChange}
+            placeholder='1234567890'
           />
         </div>
+<<<<<<< HEAD
         <div>
           <label>Caller Name (e.g., Best Buy):</label>
+=======
+        <div className="form-group">
+          <label htmlFor="callerName" className="form-label">Caller Name:</label>
+>>>>>>> 6c65b05cdc8e13f6ba81cd38c0a945787041b573
           <input
             type="text"
+            id="callerName"
             name="callerName"
+            className="form-input"
             value={formData.callerName}
             onChange={handleChange}
+            placeholder='Chase Bank'
           />
         </div>
-        <div>
-          <label>Caller Phone Number:</label>
+        <div className="form-group">
+          <label htmlFor="callerPhoneNum" className="form-label">Caller Phone Number:</label>
           <input
             type="text"
+            id="callerPhoneNum"
             name="callerPhoneNum"
+            className="form-input"
             value={formData.callerPhoneNum}
             onChange={handleChange}
+            placeholder='1234567890'
           />
         </div>
+<<<<<<< HEAD
         <div>
           <label>Description (What do you need?):</label>
+=======
+        <div className="form-group">
+          <label htmlFor="description" className="form-label">Description:</label>
+>>>>>>> 6c65b05cdc8e13f6ba81cd38c0a945787041b573
           <textarea
+            id="description"
             name="description"
+            className="form-textarea"
             value={formData.description}
             onChange={handleChange}
+            placeholder='Ex: I need help with creating a new checkings account!'
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="form-submit-button">Submit</button>
       </form>
 
       {/* Display the assistant's response */}
@@ -130,6 +164,7 @@ export default function IVRAgentComponent() {
           <p>{response}</p>
         </div>
       )}
+    </div>
     </div>
   );
 }
