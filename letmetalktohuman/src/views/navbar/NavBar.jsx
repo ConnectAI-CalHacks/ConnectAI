@@ -36,7 +36,7 @@ export default function NavBar() {
         <nav>
             <div style={styles.navbar}>
                 <div style={styles.logo}>
-                    Letmetalktohuman AI
+                    TalkTuahHuman
                 </div>
                 <ul style={styles.menu}>
                     <li style={styles.menuItem}>
