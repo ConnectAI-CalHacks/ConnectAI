@@ -30,12 +30,25 @@ export default function IVRAgentComponent() {
       customer: {
         number: formattedCallerPhoneNum,  // Caller phone number from the form
       },
-      type: 'outboundPhoneCall'
+      type: 'outboundPhoneCall',
+      // assistant: {
+      //   model: {
+      //     provider: 'openai', // LLM provider to assist with IVR
+      //     model: 'gpt-3.5-turbo', // Replace with a valid model name
+      //     messages: [
+      //       {
+      //         role: 'system',
+      //         content: `You are an agent assisting a caller in navigating a company's phone menu. You are helping the caller reach customer service to address the issue: ${description}. You will only respond with the correct number of the option they should press on the phone. Your goal is to wait until the caller has finished listening to the entire menu, and then respond with the correct option.`,
+      //       },
+      //     ],
+      //   },
+      //   dialKeypadFunctionEnabled: true,  // Enable DTMF tone dialing
+      // },
     };
 
     try {
       // Make the call and send instructions to the assistant
-      const callResponse = await fetch('https://api.vapi.ai/call', {
+      const callResponse = await fetch('/call', {
         method: 'POST',
         headers: {
           Authorization: 'Bearer 2ac772ff-5902-40bd-af27-cc01063b776e',  // Replace with your actual API key
