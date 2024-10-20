@@ -30,8 +30,13 @@
 .link {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
+  margin: 10px;
+}
+
+.link:hover {
+  color: #94ffd2;
 }
 
 /* Hamburger menu icon */
@@ -43,6 +48,11 @@
   color: white;
 }
 
+@media (min-width: 768px) {
+  .navbar {
+    padding: 50px;
+  }
+}
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .menu {

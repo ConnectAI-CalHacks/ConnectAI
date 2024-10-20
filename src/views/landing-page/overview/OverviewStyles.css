@@ -3,7 +3,7 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 100px 20px; /* Adjusted margin for smaller screens */
+  margin: 100px 150px; /* Adjusted margin for smaller screens */
 }
 
 .overview-title {
@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  font-size: 40px;
 }
 
 /* Responsive Styles */

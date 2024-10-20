@@ -4,7 +4,6 @@
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
-  background-color: #000;
 }
 
 /* Landing Page Container */
@@ -20,22 +19,7 @@ body {
   background-size: cover; /* Make sure the background covers the entire container */
 }
 
-/* Landing Page Title */
-.landing-title {
-  font-size: 12rem;
-  color: #fff;
-  margin-bottom: 20px;
-  animation: fadeIn 1.5s ease-in-out forwards; /* Fade-in animation */
-}
-
 /* Landing Page Subtitle */
-.landing-subtitle {
-  font-size: 5rem;
-  color: #ffffffcc;
-  margin-bottom: 40px;
-  max-width: 600px;
-  animation: fadeIn 1.5s ease-in-out 0.5s forwards; /* Fade-in animation with delay */
-}
 
 /* Floating Button */
 .floating-button {
@@ -48,18 +32,28 @@ body {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  animation: fadeIn 1.5s ease-in-out 1s forwards; /* Fade-in animation with delay */
   margin-top: 50px;
 }
 
 .floating-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.landing-container.title {
+  color: #000;
+  font-size: 4rem;
+}
+.title1 {
+  color: #94ffd2;
+  font-size: 4rem;
+  margin-top: -100px;
 }
 
 .main_title {
   color: #fff;
-  font-size: xx-large;
+  font-size: 22px;
   margin-bottom: 120px;
+  font-weight: 200;
 }
 
 /* Particle background customization */

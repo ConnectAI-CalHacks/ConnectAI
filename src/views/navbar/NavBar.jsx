@@ -16,7 +16,7 @@ export default function NavBar() {
     return (
         <nav className="navbar">
             <div className="logo">
-                Letmetalktohuman AI
+                Letmetalktoahuman AI
             </div>
             {/* Hamburger menu icon for small screens */}
             <div className="hamburger" onClick={toggleMenu}>
