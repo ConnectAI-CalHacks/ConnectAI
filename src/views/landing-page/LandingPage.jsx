@@ -49,7 +49,7 @@ const LandingPage = () => {
         
       </header>
       <button className="floating-button " onClick={handleClick}>
-          Learn More
+          TRY IT YOURSELF!
         </button>
     </div>
 
