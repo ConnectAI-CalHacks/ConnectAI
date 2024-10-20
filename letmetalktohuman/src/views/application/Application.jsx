@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './AppStyles.css';
 import NavBar from '../navbar/NavBar';
+/* eslint-disable no-unused-vars */
 
 export default function IVRAgentComponent() {
   const [formData, setFormData] = useState({

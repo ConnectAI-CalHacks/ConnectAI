@@ -20,9 +20,9 @@ const LandingPage = () => {
 
   
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  // const particlesLoaded = (container) => {
+  //   console.log(container);
+  // };
 
   return (
     <>
