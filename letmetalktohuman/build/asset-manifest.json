@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5e4eb8d9.css",
+    "main.js": "/static/js/main.789e128b.js",
+    "static/js/453.eb88c97b.chunk.js": "/static/js/453.eb88c97b.chunk.js",
+    "static/media/istockphoto-1490263997-640_adpp_is.mp4_1729363612392-ezgif.com-video-to-gif-converter.gif": "/static/media/istockphoto-1490263997-640_adpp_is.mp4_1729363612392-ezgif.com-video-to-gif-converter.9b8c309e7ce87ea1a34e.gif",
+    "index.html": "/index.html",
+    "main.5e4eb8d9.css.map": "/static/css/main.5e4eb8d9.css.map",
+    "main.789e128b.js.map": "/static/js/main.789e128b.js.map",
+    "453.eb88c97b.chunk.js.map": "/static/js/453.eb88c97b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e4eb8d9.css",
+    "static/js/main.789e128b.js"
+  ]
+}
