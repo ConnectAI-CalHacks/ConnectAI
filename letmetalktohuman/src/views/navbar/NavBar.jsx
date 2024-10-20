@@ -1,52 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import './Navbar.css'; // Import the CSS file
 
 export default function NavBar() {
-    const styles = {
-        navbar: {
-            backgroundColor: '#87CEEB', // Sky blue color
-            padding: '15px',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-        },
-        logo: {
-            fontSize: '24px',
-            fontWeight: 'bold',
-            color: 'white',
-        },
-        menu: {
-            listStyleType: 'none',
-            display: 'flex',
-            margin: 0,
-            padding: 0,
-        },
-        menuItem: {
-            marginLeft: '20px',
-        },
-        link: {
-            textDecoration: 'none',
-            color: 'white',
-            fontSize: '18px',
-            fontWeight: '500',
-        },
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleMenuClick = () => {
+        setMenuOpen(false);
+    };
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
     };
 
     return (
-        <nav>
-            <div style={styles.navbar}>
-                <div style={styles.logo}>
-                    TalkTuahHuman
-                </div>
-                <ul style={styles.menu}>
-                    <li style={styles.menuItem}>
-                        <Link to="/" style={styles.link}>Home</Link>
-                    </li>
-                    <li style={styles.menuItem}>
-                        <Link to="/app" style={styles.link}>Application</Link>
-                    </li>
-                </ul>
+        <nav className="navbar">
+            <div className="logo">
+                Let me talk to a HUMAN!
             </div>
+            {/* Hamburger menu icon for small screens */}
+            <div className="hamburger" onClick={toggleMenu}>
+                &#9776;
+            </div>
+            <ul className={`menu ${menuOpen ? 'open' : ''}`}>
+                <li className="menuItem">
+                    <Link onClick={handleMenuClick} to="/" className="link">Home</Link>
+                </li>
+                <li className="menuItem">
+                    <Link onClick={handleMenuClick} to="/app" className="link">Application</Link>
+                </li>
+            </ul>
         </nav>
     );
-};
+}

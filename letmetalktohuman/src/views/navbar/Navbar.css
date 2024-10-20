@@ -1,0 +1,64 @@
+.navbar {
+  background-color: #000; /* Sky blue color */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.menuItem {
+  margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  display: none; /* Hide on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger menu on small screens */
+  }
+
+  .menuItem {
+    margin-left: 0; /* Remove left margin in column view */
+    padding: 10px 0;
+  }
+}
