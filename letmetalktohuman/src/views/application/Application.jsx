@@ -78,7 +78,7 @@ export default function IVRAgentComponent() {
     <div className='container'>
     <NavBar />
         <div className="form-container">
-      <h1 className="form-title">Lemme talk to a HUMAN!</h1>
+      <h1 className="form-title">Let me talk to a HUMAN!</h1>
       <form className="form-content" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="myName" className="form-label">My Name:</label>
