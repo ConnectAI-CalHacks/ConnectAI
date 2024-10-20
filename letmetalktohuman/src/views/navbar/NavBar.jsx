@@ -6,17 +6,17 @@ export default function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const handleMenuClick = () => {
-        setMenuOpen(false);
+        setMenuOpen(false); // Close the menu when a link is clicked
     };
 
     const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
+        setMenuOpen(!menuOpen); // Toggle menu open state
     };
 
     return (
         <nav className="navbar">
             <div className="logo">
-                Let me talk to a HUMAN!
+                Letmetalktohuman AI
             </div>
             {/* Hamburger menu icon for small screens */}
             <div className="hamburger" onClick={toggleMenu}>

@@ -1,10 +1,12 @@
 .navbar {
-  background-color: #000; /* Sky blue color */
+  background-color: #111; /* Black color */
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  position: relative; /* Make it relative for absolute positioning of dropdown */
+  z-index: 10; /* Ensure it stays on top of other elements */
 }
 
 .logo {
@@ -44,13 +46,19 @@
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .menu {
-    display: none;
+    display: none; /* Hide the menu by default */
     flex-direction: column;
     width: 100%;
+    position: absolute; /* Position the menu below the navbar */
+    top: 60px; /* Adjust based on navbar height */
+    left: 0; /* Align to the left */
+    background-color: #111; /* Match the navbar background */
   }
 
   .menu.open {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hamburger {
@@ -59,6 +67,6 @@
 
   .menuItem {
     margin-left: 0; /* Remove left margin in column view */
-    padding: 10px 0;
+    padding: 10px 0; /* Add vertical padding for menu items */
   }
 }
