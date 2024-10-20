@@ -34,8 +34,8 @@ const LandingPage = () => {
       
 
       <header className="landing-content">
-       
-        <h1 className="main_title">Automated customer service got you feeling robotic? <br></br> Let’s dial up a real person!</h1>
+        <h1 className="title1">Letmetalktoahuman AI</h1>
+        <h1 className="main_title">Tired of talking to machines? Let’s connect you to a real human!</h1>
         <Typed className='main_title'
           strings={stringsToRender}
           typeSpeed={80}

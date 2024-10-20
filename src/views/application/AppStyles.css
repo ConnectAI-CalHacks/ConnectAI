@@ -62,7 +62,7 @@ body {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #94ffd2; /* Border with secondary color */
+  border: 2px solid; /* Border with secondary color */
   border-radius: 10px; /* Increased for roundness */
   box-sizing: border-box;
   background-color: transparent; /* Keep background transparent */
@@ -102,6 +102,13 @@ body {
 .form-submit-button:active {
   transform: translateY(0);
   box-shadow: none;
+}
+
+.success-message {
+  color: #4be1ae;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Responsive styles */
@@ -151,7 +158,7 @@ body {
     margin-bottom: 15px;
     position: relative;
   }
-  
+
   /* Specific styles for PhoneInput to add space */
   .form-group .react-tel-input {
     margin-bottom: 10px; /* Adjust space below PhoneInput */
