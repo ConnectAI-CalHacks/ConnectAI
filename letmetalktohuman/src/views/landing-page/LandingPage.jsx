@@ -2,6 +2,7 @@ import React from 'react';
 import './PageStyles.css';
 import { ReactTyped as Typed } from 'react-typed';
 import Overview from './overview/Overview'
+import { useNavigate} from 'react-router-dom';
 
 const stringsToRender = [
   'Talk to a real service agent.',
@@ -14,8 +15,11 @@ const stringsToRender = [
 ];
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
   const handleClick = () => {
     console.log('Learn more button clicked!');
+    navigate('/app');
   };
 
   
